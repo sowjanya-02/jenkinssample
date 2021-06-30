@@ -17,3 +17,5 @@ app = Flask(__name__)
 def home():
    hostname = socket.gethostname()
    return 'welcome to jenkins example :)'.format(hostname)
+if __name__ == "__main__":
+      app.run(host="0.0.0.0", port=4123)
