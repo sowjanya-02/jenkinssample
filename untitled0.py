@@ -12,11 +12,7 @@ import socket
 
 
 app = Flask(__name__)
-#app = create_app()
-#@app.route('/')
-#def hello():
-   #hostname = socket.gethostname()
-   #return 'welcome to conn! store microservice is running on {} pod :)'.format(hostname)
+
 @app.route('/')
 def home():
    hostname = socket.gethostname()
